@@ -16,7 +16,17 @@ return {
                 dependencies = {
                     {
                         "ms-jpq/coq_nvim",
-                        branch = "coq"
+                        branch = "coq",
+                        dependencies = {
+                            "nvim-autopairs",
+                        },
+                            config = function()
+                            local npairs = require("nvim-autopairs")
+
+                            npairs.setup({
+                                check_ts = true,  -- Поддержка Tree-sitter
+                            })
+                        end,
                     },
                     {
                         "ms-jpq/coq.artifacts",
