@@ -27,8 +27,8 @@ keymap("i", "<M-m>", 'pumvisible() ? "<C-p>" : "<M-m>"', { noremap = true, silen
 
 -- clipboard
 if vim.fn.has('clipboard') == 1 then
-    keymap("", "<C-S-c>", '"+y', opts)
-    keymap("", "<C-S-v>", '"+p', opts)
+    keymap("", "<C-c>", '"+y', opts)
+    keymap("", "<C-v>", '"+p', opts)
 else
     vim.api.nvim_err_white("Error: Clipboard support is not available")
 end
