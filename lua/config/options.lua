@@ -16,7 +16,7 @@ local options = {
   termguicolors     = true,
   relativenumber    = true,
   number            = true,
-  
+
   --tabs
   expandtab         = true,
   shiftwidth        = 4,
@@ -28,7 +28,7 @@ local options = {
   ignorecase        = true,
   hlsearch          = true,
   smartcase         = true,
-  
+
   --completion
   updatetime = 300,
   completeopt = {
