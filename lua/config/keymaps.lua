@@ -28,8 +28,8 @@ keymap("n", "<C-l>", "<C-w>l")
 keymap("i", "<M-j>", 'pumvisible() ? "<C-n>" : "<M-n>"', { noremap = true, silent = true, expr = true })
 keymap("i", "<M-k>", 'pumvisible() ? "<C-p>" : "<M-p>"', { noremap = true, silent = true, expr = true })
 
-keymap('i', '<M-h>', "<cmd>lua require'luasnip'.jump(1)<CR>", { noremap = true })
-keymap('i', '<M-l>', "<cmd>lua require'luasnip'.jump(-1)<CR>", { noremap = true })
+--keymap('i', '<M-h>', "<cmd>lua require'luasnip'.jump(1)<CR>", { noremap = true })
+--keymap('i', '<M-l>', "<cmd>lua require'luasnip'.jump(-1)<CR>", { noremap = true })
 
 
 -- clipboard
