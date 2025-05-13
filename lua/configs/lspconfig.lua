@@ -29,9 +29,7 @@ lspconfig.rust_analyzer.setup {
         cargo = {
           allFeatures = true,
         },
-        checkOnSave = {
-          command = 'clippy',
-        },
+        checkOnSave = true,
         inlayHints = { locationLinks = false },
         diagnostics = {
           enable = true,
