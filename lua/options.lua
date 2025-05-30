@@ -1,9 +1,11 @@
 require "nvchad.options"
 
--- add yours here!
+local options = {
+  relativenumber = true,
+  cursorlineopt = "both",
+};
 
-local o = vim.o;
-o.relativenumber = true;
+for k, v in pairs(options) do
+  vim.o[k] = v
+end
 
--- local o = vim.o
--- o.cursorlineopt ='both' -- to enable cursorline!

@@ -25,7 +25,7 @@ return {
       },
       view = {
         --width = 30,
-        side = "left",
+        side = "right",
       },
     })
   end
