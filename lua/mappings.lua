@@ -16,4 +16,7 @@ map("i", "<M-j>", function() require'cmp'.select_next_item() end, { desc = "Next
 map("", "<C-c>", '"+y', opts)
 map("", "<C-v>", '"+p', opts)
 
+map("", "<C-j>", "<C-d>", opts)
+map("", "<C-k>", "<C-u>", opts)
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
